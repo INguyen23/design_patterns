@@ -13,6 +13,8 @@ public class GuestList {
 
     public GuestList(String title) { 
         this.title = title;
+        /*this.people = new ArrayList<>();
+        this.searchBehavior = new LinearSearch();*/
     }
 
     /**
@@ -21,13 +23,14 @@ public class GuestList {
      * @return true or false 
      */
     public boolean add(String person) { 
+        /*if(searchBehavior.contains(people, person))
+            return false; */
         if(people.contains(person)) { 
             return false;
         }
-        else { 
-            people.add(person);
-            return true;
-        }
+
+        people.add(person);
+        return true;
     }
 
     /**
@@ -40,9 +43,8 @@ public class GuestList {
             people.remove(person);
             return true;
         }
-        else { 
-            return false;
-        }
+        
+        return false;
     }
 
     /**
