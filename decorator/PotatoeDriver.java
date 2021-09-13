@@ -1,3 +1,4 @@
+package design_patterns.decorator;
 /**
  * Runs the Potoatoe Head Program
  */
@@ -19,6 +20,7 @@ public class PotatoeDriver {
         Character eyeHatPotatoe2 = new Eyes(hatPotatoe2);
 
         eyeHatPotatoe2.draw();
+
     }
 
     public static void main(String[] args) {

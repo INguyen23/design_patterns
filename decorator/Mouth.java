@@ -1,5 +1,12 @@
 package design_patterns.decorator;
 
-public class Mouth {
-    
+public class Mouth extends CharacterDecorator {
+
+    public Mouth(Character character) { 
+        super(character);
+    }
+
+    public void customize() { 
+        this.sections.set(5, "  \\ ---- / ");
+    }
 }
